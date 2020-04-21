@@ -1,0 +1,111 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Unknown </title></head><body>
+<p><a href="https://travis-ci.org/cs-worcester-cs-348-sp-2020/CI-Exercise"><img alt="Build Status" src="https://travis-ci.org/cs-worcester-cs-348-sp-2020/CI-Exercise.svg?branch=master" /></a></p>
+<p><em>Version 2020-Spring-1.0, Revised 20 April 2020</em></p>
+<h3 id="cs-348-01-02-spring-2020"><em>CS-348 01, 02 — Spring 2020</em></h3>
+<h1 id="continuous-integration-exercise">Continuous Integration Exercise</h1>
+<h2 id="set-up-your-repository">Set up your Repository</h2>
+<h3 id="fork-the-repository">Fork the Repository</h3>
+<p><a href="https://github.com/cs-worcester-cs-348-sp-2020/CI-Exercise">https://github.com/cs-worcester-cs-348-sp-2020/CI-Exercise</a></p>
+<h3 id="1-clone-the-repository">1. Clone the Repository</h3>
+<h3 id="2-add-the-original-repository-as-an-upstream-remote">2. Add the original repository as an upstream remote</h3>
+<h3 id="3-build-with-gradle">3. Build with Gradle</h3>
+<p>gradle clean build</p>
+<h3 id="4-view-travis-ci-builds">4. View Travis CI Builds</h3>
+<p><a href="https://travis-ci.org/cs-worcester-cs-348-sp-2020/CI-Exercise">https://travis-ci.org/cs-worcester-cs-348-sp-2020/CI-Exercise/</a></p>
+<p>Be sure to look at the tabs <code>Current</code>, <code>Branches</code>, <code>Build History</code>, and <code>Pull Requests</code>.</p>
+<h3 id="5-look-at-the-travis-configuration">5. Look at the Travis Configuration</h3>
+<p>Look at the <code>.travis.yml</code> file in the CIExercise</p>
+<h3 id="6-look-at-the-git-configuration">6. Look at the Git Configuration</h3>
+<p>Look at the <code>.gitignore</code> file in the CIExercise</p>
+<h3 id="7-look-at-the-readmeme-file">7. Look at the <code>README.me</code> File</h3>
+<p>Look at the HTML source for the badge on the top line.</p>
+<h2 id="modify-the-ciexercise-to-include-your-name">Modify the CIExercise to Include your Name</h2>
+<p>I am <em>intentionally</em> not repeating all of the Git and GitHub commands for you here. You should be getting used to what you need to do. If you cannot remember how, do the following steps <strong><em>in order</em></strong>:</p>
+<ol>
+<li>Look at past in-class exercises and homework assignments.</li>
+<li>Ask your classmates for help.</li>
+<li>Ask me for help.</li>
+</ol>
+<h3 id="1-create-an-add-yourname-branch-and-switch-to-that-branch">1. Create an <code>add-yourname</code> branch, and switch to that branch</h3>
+<p>Replace <code>yourname</code> with your own name.</p>
+<h3 id="2-edit-the-code">2. Edit the code</h3>
+<p>Based on the last digit of your WSU Student ID, edit the appropriate <code>EndsWith</code> class. For example, my ID ends with <code>6</code>, so I edited the <code>EndsWith6.java</code> file. Look at <code>EndsWith6.java</code> as an example for what to do.</p>
+<h3 id="3-build-and-test-the-code-with-gradle">3. Build and test the code with Gradle</h3>
+<p>The test will fail because you have not updated the test file for the class you edited.</p>
+<p>Go update the test for the code you just wrote and test again.</p>
+<h3 id="4-run-the-jar-file">4. Run the JAR File</h3>
+<p>java -jar build/libs/CS-348-CI-Exercise.jar</p>
+<p>(Note: If you get an error that there is a mismatch in Java versions in which the code has been compiled and executed, then execute it straight from the java executable of JDK, instead of that available in JRE, as follows:</p>
+<p>From Git Bash prompt:</p>
+<p>"/c/Program Files/Java/jdk-14/bin/java" -jar build/libs/CI-Exercise.jar</p>
+<p>From DOS command prompt:</p>
+<p>"C:\Program Files\Java\jdk-14\bin\java" -jar build\libs\CI-Exercise.jar    )</p>
+<h3 id="5-add-your-code-and-commit-your-changes">5. Add your code and commit your changes</h3>
+<h3 id="6-before-pushing-your-changes-make-sure-your-repository-is-up-to-date-with-upstream">6. Before pushing your changes, make sure your repository is up-to-date with upstream</h3>
+<p>Pull recent changes from your classmates</p>
+<p>Resolve any conflicts</p>
+<h3 id="7-push-changes">7. Push changes</h3>
+<p>Make sure you are pushing to your branch.</p>
+<h3 id="8-make-a-pull-request-to-have-your-change-merged-into-the-original-repository">8. Make a pull request to have your change merged into the original repository</h3>
+<p>Note that you cannot make a pull request until Travis has run your build, and your tests are successful.</p>
+<p>See the <a href="https://github.com/cs-worcester-cs-348-sp-2020/CI-Exercise/settings/branch_protection_rules/15536969">branch protection rule</a> to see how this was done. </p>
+<h3 id="9-go-to-the-original-repository-and-approve-someone-elses-pull-request">9. Go to the original repository and approve someone else's pull request</h3>
+<h3 id="10-check-travis">10. Check Travis</h3>
+<h1 id="reference-material">Reference Material</h1>
+<h2 id="git-workflow-reminder">Git Workflow Reminder</h2>
+<blockquote>
+<ol>
+<li>Add the change</li>
+</ol>
+<blockquote>
+<ol>
+<li>Pull any changes that have ocurred since the last pull, and correct merge conflicts</li>
+</ol>
+<blockquote>
+<blockquote>
+<ol>
+<li>Commit the change, with a message describing the change.</li>
+</ol>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<ol>
+<li>Push the change</li>
+</ol>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<ol>
+<li>Make a pull request to have the change merged into the original repository</li>
+</ol>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<h2 id="general-bash-hints">General Bash  Hints</h2>
+<ul>
+<li>To view hidden files (starting with .) in Bash, type <code>ls -al</code></li>
+</ul>
+<h2 id="copyright-and-license">Copyright and License</h2>
+<h4 id="a-2020-s-nagpal-worcester-state-university">Â© 2020 S Nagpal, Worcester State University</h4>
+<p>Based on an assignment from Karl R. Wurst. Used with permission.</p>
+<p><a href="http://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-sa.png"></a>This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit<a href="http://creativecommons.org/licenses/by-sa/4.0/">http://creativecommons.org/licenses/by-sa/4.0/</a>or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
+</body></html>
