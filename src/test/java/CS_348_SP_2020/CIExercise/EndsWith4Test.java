@@ -12,7 +12,7 @@ public class EndsWith4Test {
 	public void testToString() {
 		EndsWith4 four = new EndsWith4();
 		// add your name to the expected string, after all the other names in the form John Smith\n
-		assertEquals("EndsWith4 [names=]", four.toString());
+  assertEquals("EndsWith4 [names=Aaron\n]", four.toString());
 	}
 
 }
