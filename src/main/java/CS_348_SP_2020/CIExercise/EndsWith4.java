@@ -5,7 +5,7 @@ public class EndsWith4 {
 	String names;
 
 	public EndsWith4()  {
-		names = "";
+		names = "Mike Mendes";
 		// add your name here in the form of a line that looks like:
 		// names+= "John Smith\n";
 		
